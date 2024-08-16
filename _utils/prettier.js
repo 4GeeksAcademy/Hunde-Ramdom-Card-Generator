@@ -1,6 +1,11 @@
 const prettier = require("prettier");
 const fs = require("fs");
 const path = require("path");
+{
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
+
 
 const DEFAULT_EXTENSIONS = prettier.getSupportInfo
   ? prettier

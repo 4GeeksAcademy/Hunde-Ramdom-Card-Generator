@@ -22,26 +22,21 @@ body, html {
   font-size: 24px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.card::before, .card::after {
-  content: "";
+.card-suit-top-left, .card-suit-bottom-right {
   position: absolute;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: black;
+  font-size: 24px;
 }
-.card::before {
-  top: 15px;
-  left: 15px;
+.card-suit-top-left {
+  top: 10px;
+  left: 10px;
 }
-.card::after {
-  bottom: 15px;
-  right: 15px;
+.card-suit-bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
 }
 .card-value {
   font-size: 48px;
   font-weight: bold;
-}
-.card-suit {
-  font-size: 36px;
+  margin: 20px 0;
 }
